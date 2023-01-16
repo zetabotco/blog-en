@@ -3,7 +3,7 @@ name: synchronize main
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -15,5 +15,5 @@ jobs:
         with:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           target_repo_url: git@gitlab.impstudio.id:zetabot/blog.git
-          source_branch: main
-          destination_branch: main
+          source_branch: master
+          destination_branch: master

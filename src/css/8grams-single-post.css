@@ -1,0 +1,12 @@
+.toc-container {
+  padding: 32px 0px;
+}
+
+.post-container h1,
+.post-container h2,
+.post-container h3,
+.post-container h4,
+.post-container h5 {
+  top: -250px;
+  /* position: relative; */
+}

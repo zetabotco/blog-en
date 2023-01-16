@@ -1,0 +1,43 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "8grams"
+copyright = "2022 8grams All rights reserved"
+rssLimit = 4
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "rss"
+
+[Params]
+  pathUrl = 'blog'
+  author = "8grams"
+  logo = "img/16x16.png"
+  header = "8grams"
+
+  metaDescription = 'Investasi bisnis & properti semudah belanja online'
+
+  facebook = "8grams.dev"
+  instagram = "8grams.dev"
+
+[taxonomies]
+  tag = "tag"
+  category = "category"
+  author =  "author"
+
+[related]
+  includeNewer = false
+  threshold = 80
+  toLower = false
+[[related.indices]]
+  name = 'tag'
+  weight = 60
+[[related.indices]]
+  name = 'category'
+  weight = 80
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+# disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]

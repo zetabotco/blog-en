@@ -1,0 +1,10 @@
+{{ define "main" }}
+
+<div class="terms-container" style="margin-top: 32px;">
+	<div class="chip-container">
+		{{ range sort .Data.Pages }}
+		<a href="/blog{{ .Permalink }}" class="chip">{{ .Title }}</a>
+		{{ end }} 
+	</div>
+</div>
+{{ end}}

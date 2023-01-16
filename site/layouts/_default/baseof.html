@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+{{ partial "head" . }}
+
+<body class="sans-serif">
+
+  <!-- Google Tag Manager (noscript) -->
+  <!-- Place here -->
+  <!-- End Google Tag Manager (noscript) -->
+
+  {{ block "header" . }}{{ partial "8grams-header" . }}{{end}}
+  <div style="margin-top: 137px;">
+    {{ block "main" . }}{{ end }}
+  </div>
+
+  {{ block "footer" . }}{{ partial "8grams-footer" . }}{{end}}
+
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+  <script src="{{ relURL . }}"></script>
+  {{ end }}
+
+</body>
+
+</html>

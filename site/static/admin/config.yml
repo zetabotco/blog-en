@@ -1,0 +1,113 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
+
+local_backend: false
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "blog" # Used in routes, ie.: /admin/collections/:slug/edit
+    file: "site/content/blog/_index.md"
+    label: "Blog" # Used in the UI, ie.: "New Post"
+    folder: "site/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Draft", name: "draft", widget: "boolean", required: false, default: true}
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Title", name: "title", widget: "string", hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"]}
+      - { label: "Meta Title", name: "metaTitle", widget: "string", hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"]}
+      - { label: "Meta Description", name: "metaDescription", hint: "Can't be more than 150 Characters", widget: "string", pattern: ['^.{0,150}$', "Can't be more than 150 Characters"]}
+      - { label: "Intro Blurb", name: "intro", widget: "text" }
+      - { label: "Pin This Post", name: "isPinned", widget: "boolean", required: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Tags",
+          name: "tag",
+          widget: "list",
+          field: { name: tag, label: Tag, widget: string },
+        }
+      - {
+          label: "Categories",
+          name: "category",
+          widget: "list",
+          field: { name: category, label: Category, widget: string },
+        }
+      - name: featuredImage
+        label: Featured image
+        widget: object
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "tags"
+    label: "Tags"
+    folder: 'site/content/tag'
+    slug: '{{fields.slug}}'
+    path: '{{slug}}/_index'
+    create: true
+    fields:
+      - { label: Tag Name, name: title, widget: string, hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"] }
+      - { label: Slug, name: slug, widget: string, hint: 'Custom url for this tag, do not enter special characters, else it will be removed'}
+      - { label: Meta Title, name: metaTitle, widget: string, hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"] }
+      - { label: Meta Description, name: metaDescription, hint: "Can't be more than 150 Characters", widget: text, pattern: ['^.{0,150}$', "Can't be more than 150 Characters"]}
+      - { label: Description, name: description, hint: "This will be displayed to visitor on tag page", widget: text, required: false}
+      - name: featuredImage
+        label: Featured image
+        widget: object
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
+  - name: "categories"
+    label: "Categories"
+    folder: 'site/content/category'
+    slug: '{{fields.slug}}'
+    path: '{{slug}}/_index'
+    create: true
+    fields:
+      - { label: Category Name, name: title, widget: string, hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"] }
+      - { label: Slug, name: slug, hint: "Custom url for this tag, do not enter special characters, else it will be removed", widget: string}
+      - { label: Meta Title, name: metaTitle, widget: string, hint: "Can't be more than 70 Characters", pattern: ['^.{0,70}$', "Can't be more than 70 Characters"] }
+      - { label: Meta Description, name: metaDescription, widget: text, hint: "Can't be more than 150 Characters", pattern: ['^.{0,150}$', "Can't be more than 150 Characters"]}
+      - { label: Description, name: description, hint: "This will be displayed to visitor on description page", widget: text, required: false}
+      - name: featuredImage
+        label: Featured image
+        widget: object
+        fields:
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "site/content/_index.md"
+        label: "Blog Page"
+        name: "blog"
+        fields:
+          - { label: Meta Title, name: title, widget: string }
+          - { label: Meta Description, name: metaDescription, widget: text }
+      - file: "site/content/blog/tag/_index.md"
+        label: "Tag Page"
+        name: "tag"
+        fields:
+          - { label: Meta Title, name: title, widget: string }
+          - { label: Meta Description, name: metaDescription, widget: text }
+      - file: "site/content/category/_index.md"
+        label: "Category Page"
+        name: "category"
+        fields:
+          - { label: Meta Title, name: title, widget: string }
+          - { label: Meta Description, name: metaDescription, widget: text }
+      - file: "site/content/partials/8grams-header/_index.md"
+        label: "Header Categories"
+        name: "headerCategories"
+        fields:
+          - {
+              label: "Highlighted Categories",
+              name: "headerCategory",
+              widget: "list",
+              field: { name: headerCategory, label: Header Category, widget: string },
+            }

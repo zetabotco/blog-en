@@ -1,0 +1,66 @@
+<head>
+	<meta charset="utf-8">
+	{{ partial "schema" . }}
+
+	{{ with .Params.metaTitle }}
+	<title>{{ . }} | {{ $.Site.Title }}</title>
+	{{ else }}
+	<title>{{ .Title }} | {{ $.Site.Title }}</title>
+	{{ end }}
+
+	{{if .Params.metaDescription}}
+	<meta name="description" content="{{ .Params.metaDescription }}">
+	{{else}}
+	<meta name="description" content="{{ .Site.Params.metaDescription }}">
+	{{end}}
+
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
+
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<base href="{{ if getenv " CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT" )) (getenv "URL" )
+		(getenv "DEPLOY_PRIME_URL" ) }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="{{.Site.Params.pathUrl}}/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="{{.Site.Params.pathUrl}}/img/32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="{{.Site.Params.pathUrl}}/img/16x16.png" sizes="16x16">
+	<link rel="manifest" href="{{.Site.Params.pathUrl}}/manifest.json">
+	<link rel="mask-icon" href="{{.Site.Params.pathUrl}}/img/safari-pinned-tab.svg" color="#ff4400">
+	<meta name="theme-color" content="#fff">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="business.business">
+	<meta property="og:title" content="Kelola Infrastruktur IT kamu bersama 8grams">
+	<meta property="og:url" content="/">
+	<meta property="og:image" content="{{.Site.Params.pathUrl}}/img/logo.svg">
+
+	{{if eq .Type "blog"}}
+	<link rel="canonical" href="https://8grams.dev{{.Permalink}}" />
+	{{else if or (eq .Type "tag") (eq .Type "category")}}
+	<link rel="canonical" href="https://8grams.dev/blog/{{ .Type }}/{{ .Title | urlize }}" />
+	{{end}}
+
+
+	<!-- IMPORT GOOGLE FONTS AND FONT AWESOME ICONS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+	{{ if .IsHome }}
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{{ end }}
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Place here -->
+	<!-- End Site Tag -->
+
+	<!-- Google Tag Manager -->
+	<!-- Place here -->
+	<!-- End Google Tag Manager -->
+</head>

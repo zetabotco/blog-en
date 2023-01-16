@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+<style>
+  .main-list-container {
+    padding: 42px 0px;
+  }
+
+  .list-container {
+    max-width: 1150px !important;
+  }
+
+  .title-container {
+    max-width: 1130px !important;
+  }
+
+  .render-li {
+    display: flex;
+    width: 33%;
+  }
+
+  @media (max-width: 1200px) {
+    .render-li {
+      width: 50%;
+    }
+
+    .list-container {
+      padding-left: 56px;
+      padding-right: 56px;
+    }
+
+    .title-container {
+      padding-left: 66px;
+      padding-right: 66px;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .render-li {
+      width: 100%;
+    }
+
+    .list-container {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    .title-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+</style>
+
+<div class="main-list-container">
+  <div class="center title-container">
+    <h1 style="font-size: 32px; font-weight: 700">Artikel Pilihan</h1>
+  </div>
+
+  <div class="center list-container">
+    <ul style="display: flex; justify-content: start; flex-wrap: wrap">
+      {{ range .Site.Pages}} {{ if .Params.isPinned }}
+      <div class="render-li">{{ .Render "8grams-li"}}</div>
+      {{end}} {{ end }}
+    </ul>
+  </div>
+
+  <div class="center title-container" style="padding-top: 42px">
+    <h2 style="font-size: 32px; font-weight: 700">Artikel Lainnya</h2>
+  </div>
+
+  <div class="center list-container">
+    <ul style="display: flex; justify-content: start; flex-wrap: wrap">
+      {{ range (.Paginator 20).Pages.ByPublishDate.Reverse }}
+      <div class="render-li">{{ .Render "8grams-li"}}</div>
+      {{ end }}
+    </ul>
+  </div>
+
+  {{ partial "8grams-paginator" . }}
+</div>
+
+{{end}}

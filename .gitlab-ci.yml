@@ -9,7 +9,7 @@ stages:
     DOCKER_IMAGE_TAG: stable
     NAMESPACE: zetabot
   only:
-    - main
+    - master
 
 .for_development:
   environment:

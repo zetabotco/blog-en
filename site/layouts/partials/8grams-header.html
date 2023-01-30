@@ -1,84 +1,106 @@
 <div class="lx-header-container">
   <div class="main-container">
-    <div style="
+    <div
+      style="
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 100%;
-      ">
-      <img src="{{.Site.Params.pathUrl}}/img/logo.svg" class="lx-logo" alt="icx-logo"
-        onclick="goTo('#')" />
+      "
+    >
+      <img
+        src="{{.Site.Params.pathUrl}}/img/logo.svg"
+        class="lx-logo"
+        alt="icx-logo"
+        onclick="goTo('#')"
+      />
+      <div class="lx-menus in-desktop">
+        <a href="#">Platform</a>
+        <a href="#">Solutions</a>
+        <a href="#">Resource</a>
+        <a href="#">Pricing</a>
+      </div>
     </div>
     <div class="lx-header-right in-desktop">
-      <a class="lx-item" style="
-          font-size: 16px;
-          font-weight: 700;
-          color: #868e96;
-          margin-right: 48px;
-        " href="#">Home</a>
-      <button class="lx-button lx-item in-desktop" onclick="expandModal()">
-        Get The App
-      </button>
+        <form class="lx-subscribe">
+          <input class="lx-input" type="email" placeholder="Your email address" />
+          <button class="lx-button lx-item" type="submit">Subscribe</button>
+        </form>
     </div>
-    <img src="{{.Site.Params.pathUrl}}/img/hamburgerMenu.svg" alt="menu-mobile" class="in-mobile menu"
-      onclick="toggleMenu()" />
+    <img
+      src="{{.Site.Params.pathUrl}}/img/hamburgerMenu.svg"
+      alt="menu-mobile"
+      class="in-mobile menu"
+      onclick="toggleMenu()"
+    />
   </div>
 
   <div class="modal" id="menumodal">
-    <div style="
+    <div
+      style="
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         padding: 16px;
         border-bottom: 1px solid gainsboro;
-      ">
+      "
+    >
       <h1>Unduh Aplikasi</h1>
-      <div style="
+      <div
+        style="
           cursor: pointer;
           display: flex;
           justify-content: center;
           align-items: center;
-        " onclick="closeModal()">
-        <img src="{{.Site.Params.pathUrl}}/img/close-ic.svg" alt="close"
-          style="width: 20px; height: 20px; filter: brightness(0%)" />
+        "
+        onclick="closeModal()"
+      >
+        <img
+          src="{{.Site.Params.pathUrl}}/img/close-ic.svg"
+          alt="close"
+          style="width: 20px; height: 20px; filter: brightness(0%)"
+        />
       </div>
     </div>
     <p style="margin-bottom: 0px">Download from app stores</p>
-    <div style="
+    <div
+      style="
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
-      ">
-      <a class="lx-item" style="margin-right: 48px"
-        href="#">
-        <img src="{{.Site.Params.pathUrl}}/img/google-play.svg" alt="play-store" style="width: 100%; height: 100%" />
+      "
+    >
+      <a class="lx-item" style="margin-right: 48px" href="#">
+        <img
+          src="{{.Site.Params.pathUrl}}/img/google-play.svg"
+          alt="play-store"
+          style="width: 100%; height: 100%"
+        />
       </a>
       <a class="lx-item" href="#">
-        <img src="{{.Site.Params.pathUrl}}/img/app-store.svg" alt="app-store" style="width: 100%; height: 100%" />
+        <img
+          src="{{.Site.Params.pathUrl}}/img/app-store.svg"
+          alt="app-store"
+          style="width: 100%; height: 100%"
+        />
       </a>
     </div>
   </div>
 
-  <div class="category-section" id="categorysection">
-    <div class="main-container">
-      <a href="/blog">Semua</a>
-      {{ with .Site.GetPage "/partials/8grams-header/_index.md" }} {{ range
-      .Params.headerCategory }}
-      <a href="/blog/category/{{ . | urlize }}">{{ . }}</a>
-      {{ end }} {{ end }}
-    </div>
-  </div>
 
   <div class="menu-drawer" id="menudrawer">
     <div class="menu-container" id="menucontainer">
-      <a href="#" class="menu-item">Investor</a>
-      <a href="#" class="menu-item">Penerbit</a>
-      <button class="lx-button" style="padding: 34px 0px 16px" onclick="expandModal()" type="button">
-        Get The App
-      </button>
+      <a href="#" class="menu-item">Platform</a>
+      <a href="#" class="menu-item">Solutions</a>
+      <a href="#" class="menu-item">Resource</a>
+      <a href="#" class="menu-item">Pricing</a>
+      <form class="lx-subscribe">
+        <input class="lx-input" type="email" placeholder="Your email address" />
+        <button class="lx-button lx-item" type="submit">Subscribe</button>
+      </form>
     </div>
   </div>
 

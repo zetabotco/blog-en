@@ -5,17 +5,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1px solid #e9ecef;
     border-radius: 12px;
     background-color: #fff;
   }
 
   .item-card .image {
     width: 100%;
-    height: 230px;
+    height: 274.36px;
     object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-radius: 12px;
   }
 
   .item-card .item-detail {
@@ -23,7 +21,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 16px;
+    padding-top: 16px;
     position: relative;
     width: 100%;
     height: 100%;
@@ -38,39 +36,53 @@
     margin-top: 20px;
   }
 
-  .item-detail .details .author-image {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-    border-radius: 4px;
-  }
-
-  .item-detail .title {
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    height: 110px;
-  }
-
   a.item-card:hover .item-detail .title {
     color: var(--primary);
   }
 
-  .category {
+  .details .category {
+    display: flex;
+    flex-direction: row;
+    color: #593ca5;
     font-size: 14px;
-    text-transform: uppercase;
-    color: #868e96;
     font-weight: 500;
+    gap: 6px;
+  }
+
+  .details .time {
+    display: flex;
+    flex-direction: row;
+    color: #828282;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 31px;
+    margin-bottom: 31px;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .item-detail .btn-read {
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    color: #081d34;
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 1200px) {
     .item-card .image {
-      height: 180px;
+      height: 200px;
     }
   }
 
@@ -127,46 +139,29 @@
     {{end}} {{end}}
 
     <div class="item-detail">
-      <div class="category">CROWDFUNDING</div>
-      <div class="title">{{.Params.title}}</div>
       <div class="details">
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: fit-content;
-          "
-        >
-          <div class="author-image">
-            <img
-              src="{{.Site.Params.pathUrl}}/img/logo.svg"
-              alt="icx-logo"
-              style="width: 100%; height: 100%; border-radius: 4px"
-            />
-          </div>
-          <p
-            style="
-              color: #212529;
-              font-size: 12px;
-              font-weight: 500;
-              margin-bottom: 0px;
-            "
-          >
-            {{ .Params.author }}
-          </p>
+        <div class="category" style="display: flex; flex-direction: row">
+          <div>{{ range .Params.tag }}{{ . }}{{ end }}</div>
+          <div style="color: #828282;">|</div>
+          <div>{{ .Params.author }}</div>
         </div>
-        <p
-          style="
-            color: #adb5bd;
-            font-size: 12px;
-            font-weight: 500;
-            margin-bottom: 0px;
-          "
-        >
-          {{ .ReadingTime }} Min Read
-        </p>
+        <div class="time">
+          <img
+            src="{{.Site.Params.pathUrl}}/img/round-time.svg"
+            alt="time"
+          />
+          <div>{{ .ReadingTime }} m</div>
+        </div>
+      </div>
+      <div class="title">{{.Params.title}}</div>
+      <div class="btn-read">
+        Lebih Lengkap
+        <img
+          src="{{.Site.Params.pathUrl}}/img/arrow-right.svg"
+          alt="read-more"
+          height="10px"
+          style="margin-top: 1px; margin-left: 4px"
+        />
       </div>
     </div>
   </a>

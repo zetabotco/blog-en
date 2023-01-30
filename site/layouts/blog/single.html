@@ -15,36 +15,43 @@
   }
 
   .blog-title {
-    font-size: 34px;
+    font-size: 40px;
+    text-align: center;
   }
 
   .information {
-    font-size: 16px;
-    gap: 12px;
+    font-size: 14px;
+    gap: 6px;
+    color: #1F1F1F;
+    justify-content: center;
   }
 </style>
 
 <div class="mw7 center ph3 pv4 post-container blog-container">
   <h1 class="f2 lh-title b mb3 blog-title">{{.Title}}</h1>
 
-  <div class="flex grey-3 information">
-    <p style="color: #868e96">{{ .Date.Format "2 January 2006" }}</p>
-    <p style="color: #868e96">|</p>
-    <p style="color: #868e96">{{ .ReadingTime }} Min Read</p>
-    <p style="color: #868e96">|</p>
+  <div class="flex information">
+
     <div
-      style="color: #868e96; cursor: pointer"
+      style="display: flex; flex-direction: row; cursor: pointer"
       onclick="window.location.href = '/blog/author/{{.Params.author | urlize}}'"
     >
-      Author: {{.Params.author}}
+      Penulis&nbsp;<div style="color: #593CA5;">{{.Params.author}}</div>
     </div>
+    <p style="margin-top: -3px;">•</p>
+   
+    <p>{{ .Date.Format "2/3/2006" }}</p>
+    <p style="margin-top: -3px;">•</p>
+    <p>{{ .ReadingTime }} Min Read</p>
+    <p style="margin-top: -3px;">•</p>
+    <div class="category">{{ range .Params.category }}{{ . }}{{ end }}</div>
   </div>
 
   <div class="cms mw7 center">
     {{if .Params.image}} {{if in .Params.image "http"}}
-    <img src="{{.Params.image}}" class="image" />
+    <img src="{{.Params.image}}" class="image" alt="{{.Params.image}}" />
     {{else}}
-    <img src="{{.Site.Params.pathUrl}}/{{.Params.image}}" class="image" />
+    <img src="{{.Site.Params.pathUrl}}/{{.Params.image}}" class="image" alt="{{.Params.image}}" />
     {{end}} {{else if .Params.featuredImage.src}} {{if in
     .Params.featuredImage.src "http"}}
     <img

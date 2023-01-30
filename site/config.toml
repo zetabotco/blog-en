@@ -1,9 +1,9 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "8grams"
+title = "zetabot"
 copyright = "2022 8grams All rights reserved"
-rssLimit = 4
+rssLimit = 3
 
 [outputFormats]
   [outputFormats.RSS]
@@ -11,12 +11,12 @@ rssLimit = 4
     baseName = "rss"
 
 [Params]
-  pathUrl = 'blog'
+  pathUrl = ''
   author = "8grams"
   logo = "img/16x16.png"
   header = "8grams"
 
-  metaDescription = 'Investasi bisnis & properti semudah belanja online'
+  metaDescription = 'Support customers at exactly the right moment'
 
   facebook = "8grams.dev"
   instagram = "8grams.dev"

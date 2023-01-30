@@ -10,12 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgb(225, 225, 225);
+
 }
 
 .lx-header-container .main-container {
   height: 100%;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1289px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -45,11 +47,52 @@
   margin-right: 26px;
 }
 
-.lx-button {
-  color: #00c48f;
-  font-size: 16px;
+.lx-subscribe {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+}
+
+.lx-subscribe .lx-button {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #593ca5;
+  font-weight: 400;
+  border-radius: 0px 4px 4px 0px;
+  padding: 6px 18px;
+
+}
+
+.lx-subscribe .lx-input {
+  background-color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #e5e5e5;
+  padding: 4px 8px;
+  width: 232px;
+  color: rgba(23, 23, 23, 0.5);
+  height: 30px;
+  margin: 0px;
+}
+
+.lx-subscribe .lx-input::placeholder {
+  font-size: 15px;
+  color: rgba(23, 23, 23, 0.5);
+}
+
+.lx-menus {
+  display: flex;
+  gap: 34px;
+  margin-left: 40px;
+}
+
+.lx-menus a {
+  font-size: 14px;
   font-weight: 700;
-  background-color: transparent;
+  color: #081d34;
 }
 
 .lx-item:hover {
@@ -170,11 +213,6 @@
   border-bottom: 1px solid #e5e5e5;
 }
 
-.menu-container .menu-item {
-  display: block;
-  font-size: 16px;
-  font-weight: 700;
-}
 
 /* SUB HEADER (CATEGORY) */
 .category-section {
@@ -250,10 +288,6 @@
     top: 70px !important;
   }
 
-  .category-section {
-    top: 70px !important;
-    overflow-x: scroll !important;
-  }
 
   .main-container {
     padding: 0px 66px;

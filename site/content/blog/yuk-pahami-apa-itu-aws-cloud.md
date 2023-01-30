@@ -15,7 +15,7 @@ category:
 featuredImage:
   title: Yuk, Pahami AWS Cloud dan layanannya!
   alt: AWS Cloud dan layanannya
-  src: img/aws-cloud.png
+  src: img/blog-post.webp
 ---
 Amazon Web Services (AWS) adalah platform cloud computing yang dikembangkan dan dioperasikan oleh Amazon.com. AWS menyediakan berbagai layanan cloud computing, seperti penyimpanan data, pemrosesan data, dan jaringan, yang dapat digunakan oleh perusahaan dan developer untuk mengembangkan, menjalankan, dan mengelola aplikasi dan layanan.
 

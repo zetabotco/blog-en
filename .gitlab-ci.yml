@@ -45,8 +45,8 @@ stages:
     # Authenticate using the service account
     - echo $AWS_KEY | base64 --decode -i > ~/.aws/credentials
     - echo ~/.aws/credentials
-    - aws eks update-kubeconfig --region ap-southeast-1 --name imp
-    - kubectl rollout restart -n $NAMESPACE deployment/zetabot-blog
+    - aws help
+    # - kubectl rollout restart -n $NAMESPACE deployment/zetabot-blog
 
 # development:publish:
 #   extends:

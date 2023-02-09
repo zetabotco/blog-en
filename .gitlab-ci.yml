@@ -1,13 +1,13 @@
 stages:
   - build
-  # - deploy
+  - deploy
 
 .for_release:
   environment:
     name: release
   variables:
     DOCKER_IMAGE_TAG: stable
-    NAMESPACE: zetabot
+    NAMESPACE: zetabot-production
   only:
     - master
 
@@ -16,7 +16,7 @@ stages:
     name: development
   variables:
     DOCKER_IMAGE_TAG: latest
-    NAMESPACE: zetabot
+    NAMESPACE: zetabot-staging
   only:
     - develop
 
@@ -38,35 +38,31 @@ stages:
       .
     - docker push ${CI_REGISTRY_IMAGE}:${DOCKER_IMAGE_TAG}
 
-# .deploy:
-#   stage: deploy
-#   image: ${CI_REGISTRY}/pub/docker-images:cloudsdk-stable
-#   script:
-#     # Authenticate using the service account
-#     - echo $GCLOUD_SERVICE_KEY | base64 --decode -i > ~/gcloud-service-key.json
-#     - export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-#     - gcloud auth activate-service-account --key-file ~/gcloud-service-key.json
-#     - gcloud config set project $GCLOUD_PROJECT_NAME
-#     - gcloud --quiet container clusters get-credentials $CLUSTER_NAME --region $CLUSTER_REGION
-
-#     - kubectl rollout restart -n $NAMESPACE deployment/blog
+.deploy:
+  stage: deploy
+  image: ${CI_REGISTRY}/pub/docker-images:eks-stable
+  script:
+    # Authenticate using the service account
+    - echo $AWS_KEY | base64 --decode -i > ~/.aws/credentials
+    - aws eks update-kubeconfig --region ap-southeast-1 --name imp
+    - kubectl rollout restart -n $NAMESPACE deployment/zetabot-blog
 
 development:publish:
   extends:
     - .for_development
     - .build
 
-# development:deploy:
-#   extends:
-#     - .for_development
-#     - .deploy
+development:deploy:
+  extends:
+    - .for_development
+    - .deploy
 
 release:publish:
   extends:
     - .for_release
     - .build
 
-# release:deploy:
-#   extends:
-#     - .for_release
-#     - .deploy
+release:deploy:
+  extends:
+    - .for_release
+    - .deploy

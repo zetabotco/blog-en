@@ -4,16 +4,14 @@ author: Glend Maatita
 title: What is Chatbot and what is it used for?
 metaTitle: chatbot and its benefit
 metaDescription: chatbot and its benefit
-intro: chatbot and its benefit
+intro: Chatbot and its Benefit
 isPinned: true
 slug: apa-itu-aws-cloud
 date: 2022-07-01T05:32:43.368Z
 tag:
-  - AWS Cloud
   - chatbot
   - ai
 category:
-  - Cloud
   - business
   - insight
 featuredImage:

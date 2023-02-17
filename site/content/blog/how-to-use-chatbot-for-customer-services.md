@@ -6,7 +6,7 @@ metaTitle: How to use chatbot for customer services
 metaDescription: How to use chatbot for customer services
 intro: How to use chatbot for customer services
 isPinned: true
-slug: apa-itu-aws-cloud
+slug: how-to-use-chatbot-for-customer-services
 date: 2023-02-17T10:21:21.561Z
 tag:
   - chatbot

@@ -40,7 +40,7 @@
     color: var(--primary);
   }
 
-  .details .category {
+  .category {
     display: flex;
     flex-direction: row;
     color: #593ca5;
@@ -141,18 +141,14 @@
     <div class="item-detail">
       <div class="details">
         <div class="category" style="display: flex; flex-direction: row">
-          <div>{{ range .Params.tag }}{{ . }}{{ end }}</div>
-          <div style="color: #828282;">|</div>
           <div>{{ .Params.author }}</div>
         </div>
         <div class="time">
-          <img
-            src="{{.Site.Params.pathUrl}}/img/round-time.svg"
-            alt="time"
-          />
+          <img src="{{.Site.Params.pathUrl}}/img/round-time.svg" alt="time" />
           <div>{{ .ReadingTime }} m</div>
         </div>
       </div>
+      <div class="category">{{ range .Params.tag }}[{{ . }}] {{ end }}</div>
       <div class="title">{{.Params.title}}</div>
       <div class="btn-read">
         Lebih Lengkap

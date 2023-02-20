@@ -17,7 +17,6 @@
 .lx-header-container .main-container {
   height: 100%;
   width: 100%;
-  max-width: 1289px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,7 +41,7 @@
 .lx-logo {
   cursor: pointer;
   width: auto;
-  height: 30px;
+  height: 32px;
   object-fit: cover;
   margin-right: 26px;
 }
@@ -325,5 +324,11 @@
     transform: translate(-50%, 70%);
     width: 90%;
     height: 500px;
+  }
+}
+
+@media (min-width: 760px) {
+  .lx-header-container .main-container{
+      padding: 0px 112px;
   }
 }

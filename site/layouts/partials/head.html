@@ -5,7 +5,7 @@
 	{{ with .Params.metaTitle }}
 	<title>{{ . }} | {{ $.Site.Title }}</title>
 	{{ else }}
-	<title>{{ .Title }} | {{ $.Site.Title }}</title>
+	<title>{{ $.Site.Title }} | {{ $.Site.Description }} </title>
 	{{ end }}
 
 	{{if .Params.metaDescription}}

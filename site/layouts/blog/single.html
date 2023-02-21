@@ -38,13 +38,12 @@
     >
       Penulis&nbsp;<div style="color: #593CA5;">{{.Params.author}}</div>
     </div>
-    <p style="margin-top: -3px;">•</p>
-   
+    <p style="margin-top: 0px;">•</p>
     <p>{{ .Date.Format "2/3/2006" }}</p>
-    <p style="margin-top: -3px;">•</p>
+    <p style="margin-top: 0px;">•</p>
     <p>{{ .ReadingTime }} Min Read</p>
-    <p style="margin-top: -3px;">•</p>
-    <div class="category">{{ range .Params.category }}{{ . }}{{ end }}</div>
+    <p style="margin-top: 0px;">•</p>
+    <div class="category">{{ range .Params.category }}{{ . }} {{ end }}</div>
   </div>
 
   <div class="cms mw7 center">

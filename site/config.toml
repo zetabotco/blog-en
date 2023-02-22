@@ -2,7 +2,6 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Zetabot"
-description = "Chatbot for your business"
 copyright = "2022 8grams All rights reserved"
 rssLimit = 3
 
@@ -16,7 +15,7 @@ rssLimit = 3
   author = "8grams"
   logo = "img/16x16.png"
   header = "8grams"
-
+  description = "Chatbot for your business"
   metaDescription = 'Support customers everytime without any hassles'
 
   facebook = "8grams.dev"

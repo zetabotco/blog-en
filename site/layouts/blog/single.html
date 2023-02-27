@@ -31,26 +31,36 @@
   <h1 class="f2 lh-title b mb3 blog-title">{{.Title}}</h1>
 
   <div class="flex information">
-
     <div
       style="display: flex; flex-direction: row; cursor: pointer"
       onclick="window.location.href = '/blog/author/{{.Params.author | urlize}}'"
     >
-      Penulis&nbsp;<div style="color: #593CA5;">{{.Params.author}}</div>
+      Penulis&nbsp;
+      <div style="color: #593ca5">{{.Params.author}}</div>
     </div>
-    <p style="margin-top: 0px;">•</p>
-    <p>{{ .Date.Format "2/3/2006" }}</p>
-    <p style="margin-top: 0px;">•</p>
+    <p style="margin-top: 0px">•</p>
+    <p>{{ .Date.Format "2 January 2006" }}</p>
+    <p style="margin-top: 0px">•</p>
     <p>{{ .ReadingTime }} Min Read</p>
-    <p style="margin-top: 0px;">•</p>
-    <div class="category">{{ range .Params.category }}#{{ . }} {{ end }}</div>
+    <p style="margin-top: 0px">•</p>
+    <div class="category">
+      {{ range .Params.category }}<a
+        style="color: #593ca5"
+        href="{{$.Site.Params.pathUrl}}/category/{{. | urlize }}"
+        >#{{ . }} </a
+      >{{ end }}
+    </div>
   </div>
 
   <div class="cms mw7 center">
     {{if .Params.image}} {{if in .Params.image "http"}}
     <img src="{{.Params.image}}" class="image" alt="{{.Params.image}}" />
     {{else}}
-    <img src="{{.Site.Params.pathUrl}}/{{.Params.image}}" class="image" alt="{{.Params.image}}" />
+    <img
+      src="{{.Site.Params.pathUrl}}/{{.Params.image}}"
+      class="image"
+      alt="{{.Params.image}}"
+    />
     {{end}} {{else if .Params.featuredImage.src}} {{if in
     .Params.featuredImage.src "http"}}
     <img

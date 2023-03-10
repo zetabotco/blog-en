@@ -33,7 +33,7 @@
   <div class="flex information">
     <div
       style="display: flex; flex-direction: row; cursor: pointer"
-      onclick="window.location.href = '/blog/author/{{.Params.author | urlize}}'"
+      onclick="window.location.href = '/{{.Site.Params.pathUrl}}/author/{{.Params.author | urlize}}'"
     >
       Penulis&nbsp;
       <div style="color: #593ca5">{{.Params.author}}</div>

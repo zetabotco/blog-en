@@ -41,7 +41,7 @@
 	{{if eq .Type "blog"}}
 	<link rel="canonical" href="https://8grams.dev{{.Permalink}}" />
 	{{else if or (eq .Type "tag") (eq .Type "category")}}
-	<link rel="canonical" href="https://8grams.dev/blog/{{ .Type }}/{{ .Title | urlize }}" />
+	<link rel="canonical" href="https://8grams.dev/{{.Site.Params.pathUrl}}/{{ .Type }}/{{ .Title | urlize }}" />
 	{{end}}
 
 

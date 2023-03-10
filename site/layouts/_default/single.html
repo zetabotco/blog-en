@@ -10,7 +10,7 @@
     <p style="color: #868e96">|</p>
     <div
       style="color: #868e96; cursor: pointer"
-      onclick="window.location.href = '/blog/author/{{.Params.author | urlize}}'"
+      onclick="window.location.href = '/{{.Site.Params.pathUrl}}/author/{{.Params.author | urlize}}'"
     >
       Author: {{.Params.author}}
     </div>

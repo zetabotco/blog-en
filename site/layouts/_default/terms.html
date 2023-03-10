@@ -3,7 +3,7 @@
 <div class="terms-container" style="margin-top: 32px;">
 	<div class="chip-container">
 		{{ range sort .Data.Pages }}
-		<a href="/blog{{ .Permalink }}" class="chip">{{ .Title }}</a>
+		<a href="/{{.Site.Params.pathUrl}}{{ .Permalink }}" class="chip">{{ .Title }}</a>
 		{{ end }} 
 	</div>
 </div>

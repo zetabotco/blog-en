@@ -110,7 +110,7 @@
     <div class="image">
       <img
         loading="lazy"
-        src="{{.Site.Params.pathUrl}}/{{.Params.image}}"
+        src="/{{.Site.Params.pathUrl}}/{{.Params.image}}"
         class="image"
         alt="{{.Params.title}}"
         title="{{.Params.title}}"
@@ -131,7 +131,7 @@
     <div class="image">
       <img
         loading="lazy"
-        src="{{.Site.Params.pathUrl}}/{{.Params.featuredImage.src}}"
+        src="/{{.Site.Params.pathUrl}}/{{.Params.featuredImage.src}}"
         class="image"
         alt="{{.Params.featuredImage.alt}}"
         title="{{.Params.featuredImage.title}}"
@@ -145,7 +145,7 @@
           <div>{{ .Params.author }}</div>
         </div>
         <div class="time">
-          <img src="{{.Site.Params.pathUrl}}/img/round-time.svg" alt="time" />
+          <img src="/{{.Site.Params.pathUrl}}/img/round-time.svg" alt="time" />
           <div>{{ .ReadingTime }} m</div>
         </div>
       </div>
@@ -157,7 +157,7 @@
       <a class="btn-read" href="{{ .RelPermalink }}">
         Lebih Lengkap
         <img
-          src="{{.Site.Params.pathUrl}}/img/arrow-right.svg"
+          src="/{{.Site.Params.pathUrl}}/img/arrow-right.svg"
           alt="read-more"
           height="10px"
           style="margin-top: 1px; margin-left: 4px"

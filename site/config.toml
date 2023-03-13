@@ -12,6 +12,7 @@ rssLimit = 3
 
 [Params]
   pathUrl = 'id/blog'
+  lang = 'id'
   author = "8grams"
   logo = "img/16x16.png"
   header = "8grams"

@@ -4,7 +4,7 @@
 
 <div class="related-container">
     {{ range first 4 . }}
-    <a href="/{{ $.Site.Params.lang }}/{{.RelPermalink}}" class="item">
+    <a href="/{{ $.Site.Params.lang }}{{.RelPermalink}}" class="item">
         <img src="/{{ $.Site.Params.pathUrl }}/{{.Params.featuredImage.src}}" height="60px" alt="{{.Params.image}}"/>
         <div class="detail">
             <div class="title">{{.Title}}</div>

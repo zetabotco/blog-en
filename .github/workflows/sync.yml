@@ -14,6 +14,6 @@ jobs:
       - uses: ZetabotCo/github-repository-sync-action@master
         with:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          target_repo_url: git@gitlab.impstudio.id:zetabot/blog.git
+          target_repo_url: git@gitlab.impstudio.id:zetabot/zetabot-blog-en.git
           source_branch: develop
           destination_branch: develop

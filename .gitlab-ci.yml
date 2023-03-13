@@ -47,7 +47,7 @@ stages:
     - echo $AWS_KEY | base64 --decode -i > ~/.aws/credentials
     - echo ~/.aws/credentials
     - aws eks update-kubeconfig --region ap-southeast-1 --name imp
-    - kubectl rollout restart -n $NAMESPACE deployment/zetabot-blog
+    - kubectl rollout restart -n $NAMESPACE deployment/zetabot-blog-en
 
 development:publish:
   extends:

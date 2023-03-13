@@ -11,8 +11,8 @@ rssLimit = 3
     baseName = "rss"
 
 [Params]
-  pathUrl = 'id/blog'
-  lang = 'id'
+  pathUrl = 'en/blog'
+  lang = 'en'
   author = "8grams"
   logo = "img/16x16.png"
   header = "8grams"

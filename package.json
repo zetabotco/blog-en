@@ -7,18 +7,18 @@
   "scripts": {
     "lint": "eslint src",
     "start": "run-p start:**",
-    "start:hugo": "hugo -d ../dist/id -s site -vw",
+    "start:hugo": "hugo -d ../dist/en -s site -vw",
     "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
     "preview:webpack": "npm run start:webpack",
-    "prebuild": "rimraf dist/id",
+    "prebuild": "rimraf dist/en",
     "build": "npm run build:webpack && npm run build:hugo && npm run build:after",
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
-    "build:hugo": "hugo -d ../dist/id -s site -v",
+    "build:hugo": "hugo -d ../dist/en -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
-    "build:after": "mv -t dist/id/blog dist/id/admin dist/id/category dist/id/author dist/id/fonts dist/id/img dist/id/partials dist/id/tag dist/id/.keep dist/id/404.html dist/id/*.xml dist/id/*.json"
+    "build:after": "mv -t dist/en/blog dist/en/admin dist/en/category dist/en/author dist/en/fonts dist/en/img dist/en/partials dist/en/tag dist/en/.keep dist/en/404.html dist/en/*.xml dist/en/*.json"
   },
   "author": "",
   "license": "MIT",

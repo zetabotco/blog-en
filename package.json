@@ -18,7 +18,7 @@
     "build:hugo": "hugo -d ../dist/en -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js",
-    "build:after": "mv -t dist/en/blog dist/en/admin dist/en/category dist/en/author dist/en/fonts dist/en/img dist/en/partials dist/en/tag dist/en/.keep dist/en/404.html dist/en/*.xml dist/en/*.json"
+    "build:after": "mv -t dist/en/blog dist/admin dist/en/category dist/en/author dist/en/fonts dist/en/img dist/en/partials dist/en/tag dist/en/.keep dist/en/404.html dist/en/*.xml dist/en/*.json"
   },
   "author": "",
   "license": "MIT",

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Rizqy Oktiano
 title: "AI-Driven Complaint Management: Solve Customer Complaints Faster"
 metaTitle: Solve Customer Complaints with AI-Driven CM System

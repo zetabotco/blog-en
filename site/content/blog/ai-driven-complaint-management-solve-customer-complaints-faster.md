@@ -10,6 +10,7 @@ intro: AI can automatically identify, classify, and prioritize complaints. It
   can also generate personalized responses that address the specific concerns of
   each customer. This can help businesses resolve complaints faster and more
   effectively, which can lead to happier customers.
+isPinned: true
 date: 2023-08-01T06:18:26.229Z
 category:
   - AI for Business

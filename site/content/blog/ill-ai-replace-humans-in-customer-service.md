@@ -1,7 +1,7 @@
 ---
 draft: true
 author: Risqy
-title: ill AI Replace Humans in Customer Service?
+title: will AI Replace Humans in Customer Service?
 metaTitle: ill AI Replace Humans in Customer Service?
 metaDescription: We know AI is everywhere. The question arises, Will AI replace
   humans in customer service?

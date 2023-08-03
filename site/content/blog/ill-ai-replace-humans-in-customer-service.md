@@ -1,20 +1,22 @@
 ---
-draft: true
-author: Risqy
-title: will AI Replace Humans in Customer Service?
-metaTitle: ill AI Replace Humans in Customer Service?
+draft: false
+author: Risqy Oktiano
+title: Will AI Replace Humans in Customer Service? AI for Customer Service
+metaTitle: Will AI Replace Humans in Customer Service? The Debate Continues
 metaDescription: We know AI is everywhere. The question arises, Will AI replace
   humans in customer service?
-intro: >+
-  Now, Artificial Intelligence (AI) is everywhere, starting from virtual
-  assistants, on social media,  in ride-hailing applications, until online
-  marketplace. BBC said that 14% of human work can be replaced by AI.
-
+intro: AI is changing the way we interact with customer service. But will AI
+  replace humans? Learn more about the pros and cons of AI in customer service
+  and how it is shaping the future of customer experience.
 date: 2023-08-01T16:44:40.736Z
+category:
+  - AI for Business
+  - Customer Service Automation
+  - AI Virtual Assistant
 featuredImage:
   src: https://images.unsplash.com/photo-1616161560417-66d4db5892ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8QUl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60
-  alt: ai
-  title: ai
+  alt: AI customer service representative interacting with a customer.
+  title: Will AI Replace Humans in Customer Service?
 ---
 <!--StartFragment-->
 

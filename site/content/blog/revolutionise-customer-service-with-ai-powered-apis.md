@@ -3,9 +3,8 @@ draft: false
 author: Risqy Oktiano
 title: Revolutionise Customer Service with AI-Powered APIs
 metaTitle: Enhance Customer Service with AI-Powered APIs
-metaDescription: "Discover the transformative potential of AI-powered APIs for
-  streamlined processes, improved efficiency, and exceptional customer
-  satisfaction. "
+metaDescription: " Boost efficiency with AI-powered APIs. Streamline processes,
+  exceed satisfaction. Seamlessly integrate for success"
 intro: Have you ever thought about yourself struggling to respond to your
   customers about the delivery status of their orders? Or have you found
   yourself overwhelmed with customers constantly asking if their orders are
@@ -16,10 +15,15 @@ intro: Have you ever thought about yourself struggling to respond to your
   satisfaction. Zendesk said that 61% of customers would switch to a competing
   brand after just one bad customer experience.
 date: 2023-08-01T16:50:35.501Z
+category:
+  - AI for Business
 featuredImage:
   src: https://plus.unsplash.com/premium_photo-1683120963435-6f9355d4a776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60
-  alt: ai
-  title: ai
+  alt: A futuristic AI-Powered API connecting various systems for seamless
+    customer service
+  title: Discover the transformative power of AI-powered APIs in customer service.
+    Streamline processes, automate tasks, and deliver exceptional support for
+    increased efficiency and customer satisfaction. Learn more now!
 ---
 <!--StartFragment-->
 

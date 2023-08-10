@@ -11,6 +11,7 @@ intro: >
   that there is a chatbot-shaped robot that can help answer customers’
   complaints quickly and is available 24/7. The robot studies your customer data
   so it can answer accurately. The robot we talked about is an AI Chatbot.
+isPinned: true
 date: 2023-08-01T16:41:06.847Z
 featuredImage:
   src: https://plus.unsplash.com/premium_photo-1682407404553-6df3d4140b97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbCUyMGxhbmd1YWdlJTIwcHJvY2Vzc2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60

@@ -17,8 +17,8 @@ intro: Customer service plays a pivotal role in business, serving as the
 date: 2023-08-28T18:33:30.101Z
 featuredImage:
   src: https://images.unsplash.com/photo-1629721671030-a83edbb11211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2tpbGx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60
-  alt: im
-  title: im
+  alt: AI-Powered Advancements in Customer Service
+  title: key skills in customer service
 ---
 <!--StartFragment-->
 

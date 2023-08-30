@@ -1,7 +1,7 @@
 ---
 draft: true
-author: risqy
-title: " 10 AI Chatbots for Customer Service Similar to Zetabot"
+author: Rizky Oktiano
+title: Discover Top 10 Best AI Chatbot for Customer Service
 metaTitle: " 10 AI Chatbots for Customer Service Similar to Zetabot"
 metaDescription: . Explore a list of top AI chatbot and unlock the future of
   efficient and exceptional customer support.

@@ -18,8 +18,10 @@ isPinned: true
 date: 2023-08-28T18:47:20.111Z
 featuredImage:
   src: https://images.unsplash.com/photo-1692607431186-e8d7837ad65b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q0hBVEJPVHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60
-  alt: AI
-  title: AI
+  alt: "Explore the essential factors to consider when selecting a chatbot for
+    your customer service. "
+  title: " Discover the right chatbot features and criteria to ensure seamless
+    integration and outstanding support for your business"
 ---
 <!--StartFragment-->
 

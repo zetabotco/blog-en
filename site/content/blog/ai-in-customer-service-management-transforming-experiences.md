@@ -1,10 +1,11 @@
 ---
-draft: true
-author: ri
-title: " AI in Customer Service Management : Transforming Experiences"
-metaTitle: " AI in Customer Service Management : Transforming Experiences"
-metaDescription: Discover AI-driven customer service strategies to revolutionize
-  customer interactions.
+draft: false
+author: Rizky Oktiano
+title: "AI in Customer Service: Revolutionizing Customer Experiences"
+metaTitle: " AI in Customer Service Management : Transforming Customer Experiences"
+metaDescription: "Explore the profound impact of AI in customer service
+  management, revolutionizing customer experiences. Discover how AI
+  transformation "
 intro: >
   Have you ever felt overwhelmed handling customer complaints, ranging from
   inquiries about your products or services to customers expressing

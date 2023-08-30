@@ -1,8 +1,8 @@
 ---
-draft: true
-author: Riqsy
-title: 10 Essential Customer Service Skills You Can Boost With
-metaTitle: 10 Essential Customer Service Skills You Can Boost With
+draft: false
+author: Rizky Oktiano
+title: 10 Essential Customer Service Skills You Can Boost with AI
+metaTitle: "Enhancing Essential Customer Service Skills with AI: A Top 10 Guide"
 metaDescription: " Discover the Crucial Role of AI in Modern Customer service.
   Explore 10 essential customer service skills and how AI transforms your
   customer services"

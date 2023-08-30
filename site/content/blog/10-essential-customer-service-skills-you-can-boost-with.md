@@ -3,9 +3,8 @@ draft: false
 author: Rizky Oktiano
 title: 10 Essential Customer Service Skills You Can Boost with AI
 metaTitle: "Enhancing Essential Customer Service Skills with AI: A Top 10 Guide"
-metaDescription: " Discover the Crucial Role of AI in Modern Customer service.
-  Explore 10 essential customer service skills and how AI transforms your
-  customer services"
+metaDescription: '"Uncover the Vital Role of AI in Modern Customer Service.
+  Discover How AI Transforms 10 Essential Customer Service Skills'
 intro: >
   Customer service is crucial for businesses to maintain customer satisfaction
   and loyalty. It involves providing support and assistance before, during, and

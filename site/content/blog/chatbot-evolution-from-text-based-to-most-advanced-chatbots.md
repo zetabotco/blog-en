@@ -1,11 +1,11 @@
 ---
 draft: true
-author: risqy
-title: "Chatbot Evolution: From Text-Based to Most Advanced Chatbots"
-metaTitle: "Chatbot Evolution: From Text-Based to Most Advanced Chatbots"
-metaDescription: " Discover how chatbots evolve from ELIZA to AI-powered
-  chatbots that we use daily. Embrace the future of chatbots to enhance customer
-  experiences."
+author: Rizky Oktiano
+title: "The Evolution of Chatbots: Text-Based to Advance AI-Powered"
+metaTitle: Explore The Fascinating Journey of Chatbot Evolution
+metaDescription: "The Evolution of Chatbots: From Text-Based to Advanced
+  AI-Powered Virtual Assistants|Explore the fascinating journey of chatbot
+  evolution"
 intro: >+
   Have you ever wondered why so many businesses love chatbots? Especially in
   this digital era, customer service agents must interact with customers on a
@@ -19,8 +19,12 @@ intro: >+
 date: 2023-08-28T18:50:58.305Z
 featuredImage:
   src: https://plus.unsplash.com/premium_photo-1681380410006-221742c723bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fENIQVRCT1R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60
-  alt: vhatbot
-  title: chatbot
+  alt: Modern chatbot technology
+  title: Explore the fascinating journey of chatbot evolution, from their humble
+    beginnings as text-based interfaces to the emergence of advanced AI-powered
+    virtual assistants. Discover the history, development, and modern technology
+    driving conversational AI and the transformative impact on customer
+    interactions and business efficiency."
 ---
 The Early Days of Chatbots
 Starting with Joseph Weizenbaum, a scientist from the Massachusetts Institute of Technology (MIT), ELIZA was developed in 1966. ELIZA is a program that tries to make a computer talk like a human.

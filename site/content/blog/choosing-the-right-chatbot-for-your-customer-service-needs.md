@@ -2,9 +2,9 @@
 draft: true
 author: Rizky Oktiano
 title: Selecting the Best Chatbot for Your Customer Service Requirements
-metaTitle: Choosing the Right Chatbot for Your Customer Service Needs
-metaDescription: "understanding your audience, evaluating chatbot capabilities,
-  and considering integration options. "
+metaTitle: How to Choose the Ideal Chatbot for Your Customer Service Needs
+metaDescription: Explore the essential factors to consider when selecting a
+  chatbot for your customer service. Discover the right chatbot feature
 intro: >+
   According to Oberlo, Chatbots can increase sales by up to 20%. With
   capabilities such as 24/7 customer service, automating repetitive tasks, and
@@ -14,6 +14,7 @@ intro: >+
 
   This article covers essential strategies for selecting the ideal chatbot to enhance your customer service team. It delves into key aspects such as defining goals, understanding your audience, evaluating chatbot capabilities, and considering integration options. Moreover, it offers insights into the potential benefits of chatbots, including their ability to increase sales by up to 20%, as suggested by Oberlo.
 
+isPinned: true
 date: 2023-08-28T18:47:20.111Z
 featuredImage:
   src: https://images.unsplash.com/photo-1692607431186-e8d7837ad65b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Q0hBVEJPVHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60

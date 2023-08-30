@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Rizky Oktiano
 title: Discover Top 10 Best AI Chatbot for Customer Service
 metaTitle: Discover the Top 10 Best AI Chatbots for Customer Service | Zetabot

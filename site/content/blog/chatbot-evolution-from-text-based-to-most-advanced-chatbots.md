@@ -26,76 +26,63 @@ featuredImage:
     driving conversational AI and the transformative impact on customer
     interactions and business efficiency."
 ---
-The Early Days of Chatbots
-Starting with Joseph Weizenbaum, a scientist from the Massachusetts Institute of Technology (MIT), ELIZA was developed in 1966. ELIZA is a program that tries to make a computer talk like a human.
+## The Early Days of Chatbots
 
-ELIZA worked by using simple rules to understand what people said. It used pre-written patterns to reply, making it seem like a conversation.
+Commencing with the pioneering work of Joseph Weizenbaum, a scientist hailing from the Massachusetts Institute of Technology (MIT), the year 1966 witnessed the birth of ELIZA. ELIZA, a groundbreaking program, embarked on the ambitious endeavor of making a computer converse akin to a human being.
 
-After ELIZA came PARRY, created in 1972 by Kenneth Colby, a professor of psychiatry at Stanford University. PARRY pretended to be like a person with schizophrenia and talked like ELIZA. But it was different because it had a smarter way of talking.
+ELIZA operated by employing straightforward rules to decipher human dialogue. It relied on pre-constructed patterns to generate responses, thereby creating the illusion of genuine conversation.
 
-More chatbots appeared after ELIZA and PARRY:
+Following the footsteps of ELIZA, there emerged PARRY in 1972, crafted by Kenneth Colby, a distinguished professor of psychiatry at Stanford University. PARRY assumed the persona of an individual with schizophrenia while incorporating ELIZA's conversational style. Nevertheless, it distinguished itself with a more sophisticated approach to dialogue.
 
-Dr. Sbaitso: Created by Creative Technology in the early 1990s. It could talk out loud, not just in text.
+**More chatbots appeared after ELIZA and PARRY:**
 
-Artificial Linguistic Internet Computer Entity (A.L.I.C.E.): Made by Richard Wallace in 1995. It used simple rules like ELIZA.
+1. **Dr. Sbaitso:** Forged by Creative Technology in the early 1990s, this chatbot possessed the ability to articulate speech, transcending the confines of mere text-based communication.
+2. **Artificial Linguistic Internet Computer Entity (A.L.I.C.E.):** Engineered by Richard Wallace in 1995, A.L.I.C.E. relied on simplistic rules akin to ELIZA for generating responses.
+3. **Jabberwacky:** The brainchild of Rollo Carpenter, Jabberwacky entered the scene in 1997, seeking to engage in lighthearted. human-like conversations
+4. **SmarterChild:** Conceived by ActiveBuddy in 2001, SmarterChild rose to prominence on AOL Instant Messenger (AIM) and MSN Messenger, captivating users with its interactive capabilities.
 
-Jabberwacky: Created in 1997 by Rollo Carpenter. It tried to chat like a human in a fun way.
+## Chatbots Evolution from 2001 to Present Day
 
-SmarterChild: Made by ActiveBuddy in 2001. It became famous on AOL Instant Messenger (AIM) and MSN Messenger.
+After gaining popularity among AIM and MSN Messenger users, SmarterChild garnered widespread recognition. In the year 2010, IBM introduced Watson, a specialized AI chatbot designed to compete on the iconic game show Jeopardy!. Watson's versatility extends to various domains, including:
 
-Chatbots Evolution from 2001 to Present Day
+**Customer Service:** Watson plays a pivotal role in addressing customer inquiries, providing comprehensive support, and proficiently resolving issues.
 
-After becoming popular with users of AIM and MSN Messenger, SmarterChild gained recognition. In 2010, IBM introduced Watson, an AI chatbot specifically designed to compete on the game show Jeopardy!. Watson can be used for various purposes, such as:
+**Healthcare:** In the healthcare realm, Watson lends its expertise to diagnose illnesses, propose treatment options, and offer valuable support to patients.
 
-Customer Service: Watson can help answer customer questions, provide support, and solve problems.
+**Finance:** Watson's analytical prowess comes into play when it comes to dissecting financial data, making astute predictions, and dispensing investment advice.
 
-Healthcare: Watson can help diagnose illnesses, suggest treatments, and support patients.
+**Education:** Watson's capabilities extend to crafting tailored educational materials, delivering constructive feedback, and addressing students' inquiries.
 
-Finance: Watson can analyze financial data, make predictions, and give investment advice.
+**Research:** In the research landscape, Watson proves its mettle by analyzing vast datasets, identifying intricate patterns, and making informed predictions.
 
-Education: Watson can create personalized learning materials, give feedback, and answer student questions.
+Shortly after the advent of Watson, Apple unveiled Siri in 2011, marking a significant leap in the realm of virtual assistants. Siri, designed to facilitate interactions via voice commands, caters to users of Apple products and encompasses a diverse array of functionalities:
 
-Research: Watson can analyze research data, find patterns, and make predictions.
+* **Making Calls:** Siri efficiently dials contacts from your phone directory or unknown numbers at your request.
+* **Sending Messages:** Siri adeptly sends messages to contacts in your phonebook or to new recipients.
+* **Setting Alarms:** Siri simplifies the process of configuring alarms for specific timings or important events.
+* **Finding Information:** Siri's web-searching capabilities extend to retrieving information from the internet, encompassing areas like weather forecasts, news updates, and location details.
+* **Controlling Devices:** Siri's reach extends to managing other Apple devices, including HomePod and Apple TV.
+* **Answering Questions:** Siri serves as a knowledgeable companion, ready to provide answers to your inquiries across diverse topics, encompassing weather forecasts, news updates, and sports information.
 
-Not long after Watson was released, Apple introduced Siri in 2011, Siri is a virtual assistant designed to help users of Apple products interact through voice commands. Siri can be used to do various tasks, such as:
+## **AI-powered Chatbot: The Most Advanced Chatbot until Now**
 
-Making Calls: Siri can call people from your phone contacts or new numbers.
+The advent of Jasper AI and ChatGPT has ignited a groundswell of fascination in generative AI chatbots, captivating the attention of a broad spectrum of individuals, from the general public to seasoned professionals and tech aficionados. Generative AI chatbots have been rapidly gaining traction due to their remarkable proficiency in assisting with problem-solving, catalyzing content ideation, and furnishing insightful responses.
 
-Sending Messages: Siri can send messages to contacts from your phone or new numbers.
+In the contemporary landscape, an increasing number of businesses have embarked on the journey of AI integration within their chatbot systems. Notable examples include:
 
-Setting Alarms: Siri can set alarms for specific times or events.
+**Amazon:** Amazon leverages the power of AI to efficaciously address customer inquiries, encompassing order tracking, returns, and payment-related issues.
 
-Finding Information: Siri can search the internet for information, like weather, news, and locations.
+**Bank of America:** The financial giant harnesses the capabilities of an AI-driven virtual assistant named Erica. Erica extends support to customers by addressing banking queries, facilitating transactions, and offering personalized financial guidance, all through the medium of conversational AI.
 
-Controlling Devices: Siri can control other Apple devices, like HomePod and Apple TV.
+**Woebot:** Woebot, on the other hand, specializes in the provision of mental health support. Employing conversational AI, Woebot engages users in empathetic conversations, employs sentiment analysis to comprehend emotions, dispenses coping strategies, and even offers cognitive-behavioral therapy.
 
-Answering Questions: Siri can answer your questions about different topics, like weather, news, and sports.
+It's worth noting that the chatbots utilized by ChatGPT and the aforementioned entities exhibit notable distinctions. ChatGPT epitomizes the generative AI chatbot category, renowned for its capacity to craft novel content, spanning text, images, and even videos, based on patterns derived from preexisting data.
+
+Conversely, Amazon, Bank of America, and Woebot exemplify conversational AI chatbots, designed to engage in natural, human-like dialogues with users.
+
+<!--EndFragment-->
 
 
-AI-powered Chatbot: Most Advanced Chatbot until Now
-
-The emergence of Jasper AI and ChatGPT has sparked a wave of interest in generative AI chatbots, ranging from the general public to professionals and technology vendors. Generative AI chatbots are increasingly popular due to their ability in assisting in problem-solving, generating content ideas, and providing informative answers.
-
-Nowadays, many businesses have started integrating AI into their chatbots, such as:
-
-Amazon
-	To address customer queries efficiently, Amazon employs AI to assist in answering customer needs, such as order tracking, returns, and payment issues.
-
-Bank of America:
-An AI-powered virtual assistant called Erica can help customers with banking queries, transactions, and offers personalized financial advice using conversational AI.
-
-Woebot:
-Woebot is an AI chatbot that provides mental health support. It can give their user empathetic conversations, using conversational AI to understand emotions, offer coping strategies, and provide cognitive-behavioral therapy.
-
-If you're aware, the chatbots used by ChatGPT and the examples mentioned above are different. ChatGPT is a generative AI chatbot, while Amazon, Bank of America, and Woebot are examples of conversational AI chatbot. The difference lies in that:
-
-Generative AI chatbots
-	Generative AI refers to a technology that can create new content, such as text, images, or even videos, based on patterns it has learned from existing data.
-
-Conversational AI chatbots
-	Conversational AI, focuses on creating AI systems that can engage in natural-sounding conversations with humans.
-
-(Internal Link: Conversational AI https://docs.google.com/document/d/1WRDQjjplVt3R6MPpqfyCEV5eSD4IWylcl5TMz8rkvG4/edit?usp=drive_link)
 
 Once you grasp  the difference between generative AI and conversational AI, you can choose which type is suitable for your business. Many businesses opt for conversational AI as they require human-like responses. We've discussed the history of chatbots and differentiated AI chatbot types. Now, how exactly can AI become a game-changer for chatbots?
 How AI Revolutionize Chatbots
@@ -143,7 +130,6 @@ Chatbots will evolve beyond just text-based interactions. They will incorporate 
 
 Seamless Integration
 Imagine starting a conversation with a chatbot on a website, continuing it on a messaging app, and then seamlessly picking it up on a smart device at home. Future chatbots will work seamlessly across different platforms and devices, ensuring a consistent and unified experience wherever you interact with them. This convenience will make communication with businesses and services more effortless than ever before.
-
 
 Conclusion
 

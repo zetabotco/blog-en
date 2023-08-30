@@ -1,7 +1,7 @@
 ---
 draft: true
-author: RISQY
-title: Choosing the Right Chatbot for Your Customer Service Needs
+author: Rizky Oktiano
+title: Selecting the Best Chatbot for Your Customer Service Requirements
 metaTitle: Choosing the Right Chatbot for Your Customer Service Needs
 metaDescription: "understanding your audience, evaluating chatbot capabilities,
   and considering integration options. "

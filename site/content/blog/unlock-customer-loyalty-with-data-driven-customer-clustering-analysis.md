@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Rizky Oktiano
 title: Unlock Customer Loyalty with Data-Driven Customer Clustering Analysis
 metaTitle: " Enhance Customer Loyalty with Customer Clustering Analysis"

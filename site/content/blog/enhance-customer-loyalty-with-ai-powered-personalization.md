@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 author: Rizky Oktiano
 title: Enhance Customer Loyalty with AI Powered Personalization
 metaTitle: Boost Customer Loyalty with AI-Powered Personalization

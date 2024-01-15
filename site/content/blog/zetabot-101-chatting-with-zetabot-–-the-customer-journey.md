@@ -6,6 +6,8 @@ metaTitle: "Zetabot 101: Chatting with Zetabot – The Customer Journey"
 metaDescription: "Zetabot 101: Chatting with Zetabot – The Customer Journey"
 intro: "Zetabot 101: Chatting with Zetabot – The Customer Journey"
 date: 2024-01-15T06:38:34.391Z
+tag:
+  - zetabot 101
 featuredImage:
   src: img/zb-cust-journey.webp
   alt: "Zetabot 101: Chatting with Zetabot – The Customer Journey"
